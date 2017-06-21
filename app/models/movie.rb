@@ -13,7 +13,7 @@ class Movie < ApplicationRecord
     if !orig_value
       MovieWrapper::DEFAULT_IMG_URL
     else
-      MovieWrapper.construct_image_url(orig_value)
+      orig_value
     end
   end
 end
